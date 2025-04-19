@@ -44,7 +44,7 @@ spring:
   security:
     user:
       name: admin
-      password: password
+      password: ******
 ```
 ---
 
