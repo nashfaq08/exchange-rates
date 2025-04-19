@@ -30,7 +30,7 @@ spring:
   redis:
     host: localhost
     port: 6379
-
+```
 ---
 
 ## 🔐 Authentication
@@ -45,10 +45,10 @@ spring:
     user:
       name: admin
       password: password
-
+```
 ---
 
-# 📍 `/calculate` Endpoint - Currency Conversion & Discount
+## 📍 `/calculate` Endpoint - Currency Conversion & Discount
 
 This endpoint calculates the final amount after applying discounts and converts the total to a target currency using exchange rates.
 
