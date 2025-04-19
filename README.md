@@ -52,6 +52,8 @@ spring:
 
 This endpoint calculates the final amount after applying discounts and converts the total to a target currency using exchange rates.
 
+POST /api/exchangeRates/calculate
+
 {
   "amount": 200,
   "itemType": "electronics",
