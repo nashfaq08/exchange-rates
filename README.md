@@ -33,6 +33,12 @@ spring:
 ```
 ---
 
+## 🌍 Exchange Rate Integration
+
+This project uses the ExchangeRate-API to retrieve real-time currency conversion rates. Results are cached to improve performance and reduce API calls.
+
+---
+
 ## 🔐 Authentication
 
 The `/calculate` endpoint is protected using **Basic Authentication**.
@@ -52,6 +58,7 @@ spring:
 
 This endpoint calculates the final amount after applying discounts and converts the total to a target currency using exchange rates.
 
+``` 
 POST /api/exchangeRates/calculate
 
 {
@@ -63,3 +70,25 @@ POST /api/exchangeRates/calculate
   "sourceCurrency": "USD",
   "targetCurrency": "PKR"
 }
+
+```
+---
+
+## 📦 Run Tests
+
+To execute all unit and integration tests:
+```
+mvn test
+```
+---
+
+## 📊 Generate Code Coverage Report (JaCoCo)
+
+To generate the jacoco code coverage report:
+```
+mvn clean test jacoco:report
+```
+After successful execution, open the report from:
+```
+target/site/jacoco/index.html
+```
